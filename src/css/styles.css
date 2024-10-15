@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--Yellow);
+    color: var(--Gray-950);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--White);
+    max-width: 350px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: solid 1px var(--Gray-950);
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 8px 8px hsl(0, 0%, 0%);
+}
+
+.card .article-picture {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .article-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .article-description .article-type {
+    background-color: var(--Yellow);
+    width: 85px;
+    height: 30px;
+    padding: 12px 4px;
+    border-radius: 4px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.card .article-description .article-date {
+    font-weight: 500;
+}
+
+.card .article-description .article-title {
+    font-size: clamp(20px, 24px, 24px);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card .article-description .article-title:hover {
+    color: var(--Yellow);
+}
+
+.card .article-description .article-preview {
+    font-size: 16px;
+    color: var(--Gray-500);
+}
+
+.card .creator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card .creator .creator-picture {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.card .creator .creator-name {
+    font-weight: 800;
+    color: var(--Gray-950);
+    transition: 0.3s ease-in-out;
+}
+
+.card .creator .creator-name:hover {
+    color: var(--Yellow);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 90%;
+    text-align: center;
+}
+
+footer a {
+    color: var(--Gray-500);
+}
