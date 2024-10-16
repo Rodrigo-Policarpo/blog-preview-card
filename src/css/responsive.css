@@ -1,0 +1,17 @@
+@media (max-width: 400px) {
+    .card .article-description .article-type {
+        font-size: 12px;
+    }
+
+    .card .article-description .article-date {
+        font-size: 12px;
+    }
+
+    .card .article-description .article-title {
+        font-size: 20px;
+    }
+
+    .card .article-description .article-preview {
+        font-size: 14px;
+    }
+}
